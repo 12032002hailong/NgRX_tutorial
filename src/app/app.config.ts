@@ -10,6 +10,7 @@ import { provideHttpClient } from '@angular/common/http';
 import { provideStore } from '@ngrx/store';
 import { booksReducer } from './state/books.reducer';
 import { collectionReducer } from './state/collection.reducer';
+import { reducers } from './store';
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -17,9 +18,10 @@ export const appConfig: ApplicationConfig = {
     provideZoneChangeDetection({ eventCoalescing: true }),
     provideRouter(routes),
     provideHttpClient(),
-    provideStore({
-      books: booksReducer,
-      collection: collectionReducer,
-    }),
+    // provideStore({
+    //   books: booksReducer,
+    //   collection: collectionReducer,
+    // }),
+    provideStore(reducers),
   ],
 };

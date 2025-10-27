@@ -1,0 +1,13 @@
+<div class="book-list-container">
+  @for (book of books; track book.id) {
+  <div class="book-item">
+    <p class="book-title">{{ book.volumeInfo.title }}</p>
+
+    <span class="book-authors"> by {{ book.volumeInfo.authors }}</span>
+
+    <button (click)="add.emit(book.id)" data-test="add-button">Add to Collection</button>
+  </div>
+  } @empty {
+  <div class="empty-list-message">Không tìm thấy sách nào.</div>
+  }
+</div>

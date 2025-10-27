@@ -4207,6 +4207,11 @@ socks@^2.8.3:
     ip-address "^10.0.1"
     smart-buffer "^4.2.0"
 
+some-library@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/some-library/-/some-library-1.0.0.tgz#28f091f3214bd2d2190d1a1a605b82aaa779d54d"
+  integrity sha512-Cb1dSz8GYE4Y4wCKHxxRcAh8niHTTJTbjebek5GfsfUjLkA7Qpt5VP545ul2kSGNSvO3Z8Vsyu/b9JnzldrENQ==
+
 "source-map-js@>=0.6.2 <2.0.0", source-map-js@^1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/source-map-js/-/source-map-js-1.2.1.tgz#1ce5650fddd87abc099eda37dcff024c2667ae46"
